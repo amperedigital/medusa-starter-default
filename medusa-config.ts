@@ -20,6 +20,7 @@ export default defineConfig({
     inventory: false,
     pricing: false,
     product_variant: false, // <-- underscore
+    product: false, // <-- ADD THIS LINE
     tax: false,
     shipping_profile: false, // <-- underscore
     shipping_option: false, // <-- underscore
