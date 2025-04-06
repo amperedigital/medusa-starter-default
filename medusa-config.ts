@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
-    redisUrl: process.env.REDIS_URL, // for event bus etc
+    redisUrl: process.env.REDIS_URL,
     http: {
       storeCors: process.env.STORE_CORS!,
       adminCors: process.env.ADMIN_CORS!,
@@ -15,12 +15,6 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: {
-      resolve: "@medusajs/workflows",
-      options: {
-        redisUrl: process.env.REDIS_URL,  // <-- your redis URL
-        redisTls: true,                   // <-- tell it we need TLS
-      },
-    },
+    // NOTHING here for workflows
   },
 })
