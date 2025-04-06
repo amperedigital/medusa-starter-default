@@ -15,6 +15,11 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: false, // 💥 disable auto-loading Workflows to fix SSL error
+    workflows: false,
+    stockLocation: false,
+    inventory: false,
+    productVariant: false,
+    pricing: false,
+    tax: false,
   },
 })
