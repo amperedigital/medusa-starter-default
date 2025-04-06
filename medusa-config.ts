@@ -18,8 +18,8 @@ export default defineConfig({
     workflows: {
       resolve: "@medusajs/workflow-engine-redis",
       options: {
-        redisUrl: process.env.REDIS_URL,
-        redisTls: process.env.REDIS_TLS === "true",  // ← important!
+        redisUrl: process.env.REDIS_URL!,
+        tls: true, // <<< THIS is different
       },
     },
   },
