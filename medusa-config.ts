@@ -15,6 +15,6 @@ export default defineConfig({
     },
   },
   modules: {
-    // No workflows here anymore.
+    workflows: false, // 💥 disable auto-loading Workflows to fix SSL error
   },
 })
