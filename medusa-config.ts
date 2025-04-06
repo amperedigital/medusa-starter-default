@@ -16,12 +16,12 @@ export default defineConfig({
   },
   modules: {
     workflows: false,
-    stockLocation: false,
+    stock_location: false, // <-- underscore
     inventory: false,
     pricing: false,
-    productVariant: false,
+    product_variant: false, // <-- underscore
     tax: false,
-    shippingProfile: false,
-    shippingOption: false,
+    shipping_profile: false, // <-- underscore
+    shipping_option: false, // <-- underscore
   },
 });
