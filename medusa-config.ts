@@ -17,7 +17,8 @@ export default defineConfig({
     workflows: {
       resolve: "@medusajs/workflows",
       options: {
-        enabled: false,
+        redisUrl: process.env.REDIS_URL,  // <-- Add this line!!
+        enabled: true,                    // <-- Also turn back ON workflows
       },
     },
   }
