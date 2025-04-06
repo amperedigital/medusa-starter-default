@@ -6,7 +6,6 @@ export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     redisUrl: process.env.REDIS_URL,
-    redisTls: true,
     http: {
       storeCors: process.env.STORE_CORS!,
       adminCors: process.env.ADMIN_CORS!,
@@ -20,7 +19,7 @@ export default defineConfig({
       resolve: "@medusajs/workflows",
       options: {
         redisUrl: process.env.REDIS_URL,
-        redisTls: true,
+        redisTls: true, // ✅ RIGHT PLACE
       },
     },
   },
