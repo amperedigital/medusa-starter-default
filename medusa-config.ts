@@ -15,12 +15,6 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: {
-      resolve: "@medusajs/workflow-engine-redis",
-      options: {
-        redisUrl: process.env.REDIS_URL!,
-        tls: true, // <<< THIS is different
-      },
-    },
+    // No workflows here anymore.
   },
 })
