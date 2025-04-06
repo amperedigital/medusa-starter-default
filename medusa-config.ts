@@ -1,4 +1,4 @@
-import { defineConfig } from "@medusajs/medusa";
+import { loadEnv, defineConfig } from "@medusajs/framework/utils";
 
 export default defineConfig({
   projectConfig: {
