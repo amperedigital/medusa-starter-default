@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || 'development', process.cwd())
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
-    redisUrl: process.env.REDIS_URL, // Already rediss://, so no TLS manually needed
+    redisUrl: process.env.REDIS_URL, // good for session + caching
     http: {
       storeCors: process.env.STORE_CORS!,
       adminCors: process.env.ADMIN_CORS!,
@@ -19,6 +19,7 @@ export default defineConfig({
       resolve: "@medusajs/workflow-engine-redis",
       options: {
         redisUrl: process.env.REDIS_URL,
+        tls: {}, // <<< VERY IMPORTANT FOR UPSTASH REDIS
       },
     },
   },
