@@ -11,6 +11,7 @@
     "dev": "medusa develop"
   },
   "dependencies": {
+    "@babel/runtime": "^7.27.0",
     "@medusajs/cli": "2.6.1",
     "@medusajs/framework": "2.6.1",
     "@medusajs/medusa": "2.6.1",
@@ -20,7 +21,8 @@
     "@mikro-orm/postgresql": "6.4.3",
     "awilix": "8.0.1",
     "medusa-core-utils": "1.2.3",
-    "pg": "8.13.0"
+    "pg": "8.13.0",
+    "react-dom": "18"
   },
   "devDependencies": {
     "@medusajs/test-utils": "2.6.1",
