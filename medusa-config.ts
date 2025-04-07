@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || "development", process.cwd());
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL!,
-    redisUrl: process.env.REDIS_URL!, // ✅ your Railway URL here
+    redisUrl: process.env.REDIS_URL!,
     http: {
       storeCors: process.env.STORE_CORS || "",
       adminCors: process.env.ADMIN_CORS || "",
@@ -13,11 +13,15 @@ export default defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
-    redisOptions: {
-      tls: {},
-    },
   },
   modules: {
+    workflows: {
+      resolve: "@medusajs/workflows",
+      options: {
+        redisUrl: process.env.REDIS_URL!,
+        redisTls: true, // ✅ SSL/TLS enabled
+      },
+    },
     stock_location: false,
     inventory: false,
     pricing: false,
