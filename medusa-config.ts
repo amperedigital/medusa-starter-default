@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || "development", process.cwd());
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL!,
-    redisUrl: process.env.REDIS_URL!, // Still OK to keep rediss://
+    redisUrl: process.env.REDIS_URL!,
     http: {
       storeCors: process.env.STORE_CORS || "",
       adminCors: process.env.ADMIN_CORS || "",
@@ -15,14 +15,13 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: false,
-    product: false, // <-- DISABLE THIS ALSO TEMPORARILY
-    stock_location: false,
-    inventory: false,
-    pricing: false,
-    product_variant: false,
-    tax: false,
-    shipping_profile: false,
-    shipping_option: false,
+    product: { resolve: "@medusajs/product" },
+    promotion: { resolve: "@medusajs/promotion" },
+    tax: { resolve: "@medusajs/tax" },
+    pricing: { resolve: "@medusajs/pricing" },
+    inventory: { resolve: "@medusajs/inventory" },
+    stock_location: { resolve: "@medusajs/stock-location" },
+    workflows: { resolve: "@medusajs/workflows" },
+    cart: { resolve: "@medusajs/cart" },
   },
 });
