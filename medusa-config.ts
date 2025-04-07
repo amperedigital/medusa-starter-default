@@ -15,13 +15,6 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: {
-      resolve: "@medusajs/workflows",
-      options: {
-        redisUrl: process.env.REDIS_URL!,
-        redisTls: true, // ✅ SSL/TLS enabled
-      },
-    },
     stock_location: false,
     inventory: false,
     pricing: false,
