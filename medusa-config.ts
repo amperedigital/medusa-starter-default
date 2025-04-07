@@ -15,19 +15,14 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: {
-      resolve: "@medusajs/workflows",
-      options: {
-        redisUrl: process.env.REDIS_URL!,
-        // ❌ remove redisTls here, no need
-      },
-    },
+    // ❌ REMOVE workflows
     stock_location: false,
     inventory: false,
     pricing: false,
     product_variant: false,
     tax: false,
     shipping_profile: false,
-    shipping_option: false,
-  },
+    shipping_option: false
+    },
+ 
 });
