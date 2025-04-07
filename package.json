@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.27.0",
-    "@medusajs/cli": "^2.8.1",
+    "@medusajs/cli": "2.6.1", 
     "@medusajs/framework": "^2.8.1",
     "@medusajs/medusa": "^2.8.1",
     "@medusajs/cart": "^2.8.1",
