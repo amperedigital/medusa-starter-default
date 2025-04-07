@@ -15,14 +15,19 @@ export default defineConfig({
     },
   },
   modules: {
-    workflows: false,
-    stock_location: false, // <-- underscore
+    workflows: {
+      resolve: "@medusajs/workflows",
+      options: {
+        redisUrl: process.env.REDIS_URL!,
+        redisTls: true, // ✅ put TLS here
+      },
+    },
+    stock_location: false,
     inventory: false,
     pricing: false,
-    product_variant: false, // <-- underscore
-    product: false, // <-- ADD THIS LINE
+    product_variant: false,
     tax: false,
-    shipping_profile: false, // <-- underscore
-    shipping_option: false, // <-- underscore
+    shipping_profile: false,
+    shipping_option: false,
   },
 });
