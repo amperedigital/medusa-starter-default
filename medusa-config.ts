@@ -19,7 +19,7 @@ export default defineConfig({
       resolve: "@medusajs/workflows",
       options: {
         redisUrl: process.env.REDIS_URL!,
-        redisTls: true, // ✅ put TLS here
+        // ❌ remove redisTls here, no need
       },
     },
     stock_location: false,
