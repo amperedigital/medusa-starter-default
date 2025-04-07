@@ -5,7 +5,7 @@ loadEnv(process.env.NODE_ENV || "development", process.cwd());
 export default defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL!,
-    redisUrl: process.env.REDIS_URL!, // <<<< your rediss:// Aiven URL
+    redisUrl: process.env.REDIS_URL!, // Still OK to keep rediss://
     http: {
       storeCors: process.env.STORE_CORS || "",
       adminCors: process.env.ADMIN_CORS || "",
@@ -15,14 +15,8 @@ export default defineConfig({
     },
   },
   modules: {
-    product: {
-      resolve: "@medusajs/product",
-      options: {
-        redisUrl: process.env.REDIS_URL!,
-        redisTls: process.env.REDIS_TLS === "true", // ✅ this is good
-      },
-    },
-    workflows: false, // ✅ no commas missing now
+    workflows: false,
+    product: false, // <-- DISABLE THIS ALSO TEMPORARILY
     stock_location: false,
     inventory: false,
     pricing: false,
