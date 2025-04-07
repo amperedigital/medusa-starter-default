@@ -7,8 +7,8 @@
   "scripts": {
   "build": "medusa build",
   "seed": "medusa exec ./src/scripts/seed.ts",
-  "start": "medusa start --skip-workflows",
-  "dev": "medusa develop --skip-workflows"
+  "start": "medusa start",
+  "dev": "medusa develop"
 },
   "dependencies": {
     "@babel/runtime": "^7.27.0",
