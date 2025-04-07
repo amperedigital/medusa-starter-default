@@ -9,7 +9,7 @@
   "seed": "medusa exec ./src/scripts/seed.ts",
   "start": "medusa start --skip-workflows",
   "dev": "medusa develop --skip-workflows"
-}
+},
   "dependencies": {
     "@babel/runtime": "^7.27.0",
     "@medusajs/cart": "^2.6.1",
