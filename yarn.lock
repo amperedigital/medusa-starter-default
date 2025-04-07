@@ -1404,7 +1404,7 @@
   dependencies:
     ioredis "^5.4.1"
 
-"@medusajs/cart@2.6.1":
+"@medusajs/cart@2.6.1", "@medusajs/cart@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/cart/-/cart-2.6.1.tgz#83932019615f82f44723931ff85d735ef2e0b6c0"
   integrity sha512-mEDQkVIun7DQYjJTYvtgg5eweiUEhX3wcP3lARsMG6J8bvtb04mbiqo+X9ZytOKZYl9aIUjze0aNSuusgZWYvA==
@@ -1578,7 +1578,7 @@
   resolved "https://registry.yarnpkg.com/@medusajs/index/-/index-2.6.1.tgz#0cd257a0a51da9bf1b147893900266cde69ee443"
   integrity sha512-ZR/VuEGkbzxKUlF8b+GzIStYJ40PV30XX2nLqoo0hl1lIwyT1ThJPcb6MofGXG4XMgeiv9Er1uSpl434LVyNqg==
 
-"@medusajs/inventory@2.6.1":
+"@medusajs/inventory@2.6.1", "@medusajs/inventory@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/inventory/-/inventory-2.6.1.tgz#a3d38d7aa949635677e803e384b673b2a8d85416"
   integrity sha512-Dwfaigo/OmWVP0WrzUt0b0oLpTLQ9HFl6CBdGcYB4tqXjBU+I36EdbG1m+hkrWldyHXzlsqUJq/sluMOlj8X0g==
@@ -1731,17 +1731,17 @@
   resolved "https://registry.yarnpkg.com/@medusajs/payment/-/payment-2.6.1.tgz#1a12db3eae42f68cfde15204dd4dd527bc98f7f5"
   integrity sha512-wlSz1LdM0eRQgULXY/OjzViW8nb3lO/P+Ncgn6Usxz0GYRII94ODLEfVB7Fnyf6JAbIz0p3FBxBOugS9iwIlSw==
 
-"@medusajs/pricing@2.6.1":
+"@medusajs/pricing@2.6.1", "@medusajs/pricing@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/pricing/-/pricing-2.6.1.tgz#352c012d07222fe415d06eb1d81237099d0c4b32"
   integrity sha512-/6gxZS2ggSwQNZ9rEA2g23IYi5uZN6JvzAmvY/qG1W8n8LmvX8tf2jOnuS5zKxD64/qm/pxA/VdUGoBtxIhPHg==
 
-"@medusajs/product@2.6.1":
+"@medusajs/product@2.6.1", "@medusajs/product@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/product/-/product-2.6.1.tgz#55c0a687015faf619325fd3fe8a25fb10b52dee8"
   integrity sha512-JYejPJAUZI2jh/vbwoRCHKetD9LNpKXMmHfRG8WGMTsgR1So+HXSXMcLg/Oe3w9UHqHonmcPNt/ycrdDWLfKAw==
 
-"@medusajs/promotion@2.6.1":
+"@medusajs/promotion@2.6.1", "@medusajs/promotion@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/promotion/-/promotion-2.6.1.tgz#da503c2f5b278a1aa6c09b897fe33a533c9a7d0b"
   integrity sha512-MtobwJyz3a9xzR0E0zAUBstK1arO8JQyzZphr02xKtAvqiMkuYzriRfqgHmKuEOYIrPAbjXT2T4HtL7UKbS8Jg==
@@ -1756,7 +1756,7 @@
   resolved "https://registry.yarnpkg.com/@medusajs/sales-channel/-/sales-channel-2.6.1.tgz#ab0cc0e3f3635732225e65356131d83e13b4d11a"
   integrity sha512-x7uxDvNvhLCzHsXqoyxR9krW00aLh8Y3gg36D1kttNwikYaQzazcyz5suBzBlEYy/02HpHoKmCj4JY2Gj7CtSA==
 
-"@medusajs/stock-location@2.6.1":
+"@medusajs/stock-location@2.6.1", "@medusajs/stock-location@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/stock-location/-/stock-location-2.6.1.tgz#310f466c6bb6cca47f8305379a873024bb97f375"
   integrity sha512-zstH54FHuUB6q1dqBPHDKy7bm5cYA0hyaJJNRc4CICdF2QdWisHMQnX3kZfgMhgZMD6neJkr3NYlM3YBy5pjow==
@@ -1766,7 +1766,7 @@
   resolved "https://registry.yarnpkg.com/@medusajs/store/-/store-2.6.1.tgz#994e176f51a89a0bf19761f58aaf17479a3d76e0"
   integrity sha512-qEoZ/HQjdrAzNgGUybfbfaYUvCwah5AEKkRCj0DTXu5DIvoQP/Se+kgTvfEqfHBqjGK2qyW2swOi0mlZMBMJTw==
 
-"@medusajs/tax@2.6.1":
+"@medusajs/tax@2.6.1", "@medusajs/tax@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/tax/-/tax-2.6.1.tgz#5835bd8e81df90c781c47b2c08f3c1d8fce82ccd"
   integrity sha512-BtGjCKVqugrDftjho3fQqf+6D7cfPcVZHj7QSXEDZ2mistlPpNHm7Lu4lT90ywm8FYeqZ9ye0ZQYAQ0sm/AvVg==
@@ -1868,7 +1868,7 @@
     ioredis "^5.4.1"
     ulid "^2.3.0"
 
-"@medusajs/workflows-sdk@2.6.1":
+"@medusajs/workflows-sdk@2.6.1", "@medusajs/workflows-sdk@^2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@medusajs/workflows-sdk/-/workflows-sdk-2.6.1.tgz#32f8fd4694e427fb02b994c14e516aaea39e7ab6"
   integrity sha512-dbiDYLpDp4piWNRON0sz+QOUaryRdo6pau4EMHmhZ+HxL8zCeblN0bJl59qr9QSm2nb8KSPv72PPeANfEO/ZAw==
