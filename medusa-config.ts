@@ -13,8 +13,10 @@ export default defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
+    redisTls: true, // <<<<<<<< VERY important for Aiven Redis
   },
   modules: {
+    workflows: false,
     stock_location: false,
     inventory: false,
     pricing: false,
@@ -22,5 +24,7 @@ export default defineConfig({
     tax: false,
     shipping_profile: false,
     shipping_option: false,
+    promotion: false, // <<< very important
+    product: false, // <<< in case product module is dynamic
   },
 });
